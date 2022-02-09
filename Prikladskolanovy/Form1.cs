@@ -16,5 +16,16 @@ namespace Prikladskolanovy
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int n = Convert.ToInt32(textBox1.Text);
+            int faktorial = 1;
+            for (int i=2; i <= n; i++)
+            {
+                faktorial *= i;
+            }
+            label1.Text = faktorial.ToString();
+        }
     }
 }
